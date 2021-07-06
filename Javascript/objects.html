@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h4 id="dispCarNames"></h4>
+    
+    <script>
+        // Literal Way of creating an object by using {} curly braces
+        var carNames={
+            name:"Maruthi",
+            name1:"Volvo",
+            name2:"Mahindra",
+            name3:"Audi",
+            price:3500000
+        }
+        // We can add the property to Object with . Notation
+        carNames.name4="Tesla"
+
+        // we can add the property to Object with [] Array Braket
+        carNames["name5"]="Scoda"
+
+
+        document.write(carNames.name+ "<br>" +carNames.name2+ "<br>" + carNames.name4+ "<br>"+ carNames.name5)
+        document.getElementById("dispCarNames").innerHTML=carNames.price
+
+
+        // Constructor Way of creating an Object
+        function person(first,last,age){
+            this.firstName=first;
+            this.lastName=last;
+        }
+        var fullName=new person("Leela","Vathi",39)
+        document.write(fullName.firstName + fullName.lastName+"<br>")
+
+        // OOP- Object Oriented Programming method of creating an object
+        // Three  types
+        // 1. Builtin Object
+        // 2. Constructor 
+        // 3. Class Way
+
+        // 1. Builtin way of Creating an Object
+
+        var personName= new Object({
+            fName:"Leela",
+            lName:"Vathi",
+        })
+        document.write(personName.fName+personName.lName+"<br>")
+
+        // Constructor Way of creating an Object
+        function person(first,last,age){
+            this.first=first;
+            this.last=last;
+        }
+        var fullName=new person("Murali","Krishna",39)
+        document.write(fullName.first + fullName.last+"<br>")
+
+        // Class Way of creating an Object
+        class laptop{
+            constructor(model1,model2){
+                this.model1=model1,
+                this.model2=model2
+            }
+
+        }
+        var laptopModels=new laptop("HP","Lenova")
+
+        document.write(laptopModels.model1+"<br>"+laptopModels.model2)
+
+    </script>
+
+</body>
+</html>
