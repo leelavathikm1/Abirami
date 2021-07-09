@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Named Function
+        function myFristFunction(name1,name2,name3){
+            console.log("Lokesh","Harish","Abi")
+            document.write("Lokesh"+"<br>"+ "Harish"+"<br>"+"Abi"+"<br>")
+        }
+        myFristFunction() //Invoking a function or calling a function
+
+        function numbers(parameter1,parameter2){
+            return parameter1 * parameter2;
+        }
+        document.getElementById("demo").innerHTML=numbers(5,5)
+
+        // Function Return
+        var result=results(7,8)
+        function results(a,b){
+            return a * b;
+        }
+        document.write(result+"<br>")
+
+        // Self Invoked Function
+
+        // (function(){
+        //     document.write("Iam From self Invoked function")
+        // }())
+
+        // Arrow Function
+
+        var totalMarks =(science,maths)=>{
+            return science + maths;
+        }
+        // document.write(totalMarks(45,56))
+
+        // reference function
+
+        function studentNames(fName,lName){
+            return fName + lName
+        }
+        document.write(studentNames("Lokesh","Kumar"))
+
+    </script>
+</body>
+</html>
