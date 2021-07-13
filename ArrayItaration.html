@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Array Itaretion Method will check each and every array element -->
+    <script>
+        //forEach()  this method has a callback function
+        var studentNames=["lokesh","Harish","Abhi","Leela"]
+        studentNames.forEach((dispNames)=>{
+            console.log(dispNames)
+        })
+
+        // map() it will create a new array by performing a function on each array element
+        // without values it'll not execute
+        // var num1=[6,4,56,34,54]
+        // var num2=num1.map(myNumbers);
+
+        // function myNumbers(dispNumbers){
+        //     return dispNumbers / 2
+        // }
+        // document.write(num2)
+
+        // array Filter() it creates a new array  with array elements
+        // var num1=[6,4,56,34,54]
+        // var over6=num1.filter(myNumbers)
+
+        // function myNumbers(dispNums){
+        //     return dispNums>=6
+        // }
+        // document.write(over6)
+
+        // array reduce() it runs a function on each array element to produce a single value
+        // var num1=[6,4,56,34,54]
+        // var sum=num1.reduce(mySum)
+
+        // function mySum(total,value){
+        //     return total+value; // statement
+        // }
+        // console.log(sum)
+
+        // array every() this method check it all pass a test(True or False)
+        // array some()
+        // var num1=[6,4,56,34,54,8,10,15,45]
+        // var lessthen=num1.every(myValues)
+
+        // function myValues(value){
+        //     return value>10;
+        // }
+        // console.log(lessthen)
+
+        //  array indexOf()  lastIndexOf()
+        var position=studentNames.indexOf("Harish")+1
+
+        // Array find() it returns the value of the first array element
+        var num1=[6,4,56,34,54,8,10,15,45]
+        var first=num1.find(myFind);
+
+        function myFind(dispFirst){
+            return dispFirst>10
+        }
+        console.log(first)
+        document.write(first)
+    </script>
+</body>
+</html>
