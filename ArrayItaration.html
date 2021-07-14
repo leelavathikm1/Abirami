@@ -10,10 +10,10 @@
     <!-- Array Itaretion Method will check each and every array element -->
     <script>
         //forEach()  this method has a callback function
-        var studentNames=["lokesh","Harish","Abhi","Leela"]
-        studentNames.forEach((dispNames)=>{
-            console.log(dispNames)
-        })
+        var studentNames=["leela","Lokanathan","Harish","Abhi","lokesh"]
+        // studentNames.forEach((dispNames)=>{
+        //     // console.log(dispNames)
+        // })
 
         // map() it will create a new array by performing a function on each array element
         // without values it'll not execute
@@ -54,17 +54,18 @@
         // console.log(lessthen)
 
         //  array indexOf()  lastIndexOf()
-        var position=studentNames.indexOf("Harish")+1
+        var position=studentNames.indexOf("lokesh")-1
+        console.log(position)
 
         // Array find() it returns the value of the first array element
-        var num1=[6,4,56,34,54,8,10,15,45]
-        var first=num1.find(myFind);
+        // var num1=[6,4,56,34,54,8,10,15,45]
+        // var first=num1.find(myFind);
 
-        function myFind(dispFirst){
-            return dispFirst>10
-        }
-        console.log(first)
-        document.write(first)
+        // function myFind(dispFirst){
+        //     return dispFirst>10
+        // }
+        // console.log(first)
+        // document.write(first)
     </script>
 </body>
 </html>

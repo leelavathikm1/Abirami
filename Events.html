@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Events in JavaScript
+        Javascript interaction with HTML is handled through events that occar
+         whtn the user or the browser manipulates a page ,
+         when the loads it is called an event handlers-->
+    
+    <!-- <p id="demo"></p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Click get to todays date and time</button>
+     -->
+      <!-- Commen HTML Events
+            1. onChange , 2. onclick, 3.onmouseover, 4.onmouseout , 5.onkeydown , 6.onload -->
+
+     <button onclick="alert('Hello')">Click to alert a message</button>
+     <h5 id="date"></h5>
+     <button onclick="displayDate()">Click to get date</button>
+    <script>
+        function displayDate(){
+            document.getElementById("date").innerHTML=Date()
+        }
+
+    </script>
+
+    <!-- Input Events
+        1.onfocus , 2.onkeydown , 3.onkeyup, 4.onblur, 5.onselect ,6.onsubmit , 7.onkeypress, 8.onchange, 9.onreset -->
+   
+        <label for="name">Enter Name :</label>
+        <input type="text" id="fName" onblur="myFunction()">
+
+        <script>
+            function myFunction(){
+                var name=document.getElementById("fName");
+                name.value=name.value.toLowerCase();
+                
+            }
+        </script>
+</body>
+</html>
