@@ -7,28 +7,49 @@
     <title>Document</title>
 </head>
 <style>
-    div{
-        border: 1px solid;
-        float: right;
-    }
+    div {
+    border: 1px solid;
+    margin-right: 10px;
+    float: left;
+}
 </style>
 <body>
     <table>
         <tbody id="myTbody"></tbody>
     </table>
-    <div id="myDiv" ></div>
+    
     
     <script>
         var enterNum=prompt("Enter Number")
         for(i=2; i<=enterNum; i++){
             var myDiv=document.createElement("div")
+            var myTable="";
+            for(j=1; j<=10; j++){
+                myTable = myTable + i  + " = " + j + "x" + i*j + "<br>"
+                myDiv.innerHTML=myTable
+            }
            
-        // var myTr=document.createElement("tr")
-        //  document.getElementById("myTbody").appendChild(myTr)
+            document.body.appendChild(myDiv)
+
+            // var myTr=document.createElement("tr")
+
+            // document.getElementById("myTbody").appendChild(myTr)
+            // var myP=document.createElement("p")
+            // console.log(i)
+            // document.body.appendChild(myP)
+            // document.write(i+"<br>")
+        }
+
+
+        // for(i=2; i<=enterNum; i++){
+        //     var myDiv=document.createElement("div")
+           
+        // // var myTr=document.createElement("tr")
+        // //  document.getElementById("myTbody").appendChild(myTr)
 
         
-        document.getElementById("myDiv").appendChild(myDiv)
-        }
+        // document.getElementById("myDiv").appendChild(myDiv)
+        // }
     </script>
 </body>
 </html>
