@@ -14,7 +14,7 @@ function getValues(){
         person[a]=document.getElementById(a).value;
        
     }
-    users.push(person[a])
+    users.push(person)
     // console.log(person)
     displayData(users)
   
@@ -22,7 +22,7 @@ function getValues(){
 
 function displayData(users){
     users.map(function(obj){
-        console.log(users)
+        console.log(obj)
     })
 
 }
